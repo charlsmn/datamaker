@@ -1,5 +1,50 @@
 @import url('./normalize.css');
 
+@font-face {
+    font-family: 'ITC Avant Garde Pro Bk';
+    src: url('../fonts/ITCAvantGardePro-BkObl.woff2') format('woff2'),
+        url('../fonts/ITCAvantGardePro-BkObl.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Pro Md';
+    src: url('../fonts/ITCAvantGardePro-Bold.woff2') format('woff2'),
+        url('../fonts/ITCAvantGardePro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Pro Bk';
+    src: url('../fonts/ITCAvantGardePro-Bk.woff2') format('woff2'),
+        url('../fonts/ITCAvantGardePro-Bk.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Pro Md';
+    src: url('../fonts/ITCAvantGardePro-Md.woff2') format('woff2'),
+        url('../fonts/ITCAvantGardePro-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Pro XLt';
+    src: url('../fonts/ITCAvantGardePro-XLt.woff2') format('woff2'),
+        url('../fonts/ITCAvantGardePro-XLt.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
 $color-primary: #15376e;
 $color-secondary: #20a3e5;
 $color-white: #fff;
@@ -13,7 +58,7 @@ $lg: 992px;
 $tablet: 1024px;
 $xl: 1280px;
 
-$font-family-heading: 'Montserrat', sans-serif;
+$font-family-heading: 'ITC Avant Garde Pro Md', sans-serif;
 
 $transicion: all 0.6s ease;
 
@@ -701,6 +746,9 @@ section {
             position: relative;
             max-width: 100%;
             margin-top: 30px;
+            border: 1px solid;
+            border-bottom: 8px solid;
+            padding: 30px;
         }
 
         p {
