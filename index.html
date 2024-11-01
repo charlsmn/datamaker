@@ -38,16 +38,16 @@
             <section class="hero-home">
                 <div class="container">
                     <div class="col col-video">
-                        <iframe
-                            width="100%"
-                            height="415"
-                            src="https://www.youtube.com/embed/QrR_gm6RqCo?si=uv8rJh63g8GPBOeN"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
-                        ></iframe>
+                        <div class="video-iframe">
+                            <iframe
+                                src="https://www.youtube.com/embed/QrR_gm6RqCo?si=uv8rJh63g8GPBOeN"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                     <div class="col col-text">
                         <h1>DataMaker</h1>
@@ -62,7 +62,7 @@
                                     src="./image/register-icon.png"
                                 />Regístrate</a
                             >
-                            <a href="#" class="link"
+                            <a href="#" class="link video-popup-btn"
                                 ><img src="./image/circled-play.png" />¿Cómo
                                 registrarse?</a
                             >
@@ -157,7 +157,9 @@
                         <p>
                             ** Actualmente compatible con World Office. Si usas
                             otro software de contabilidad por favor
-                            <a href="#">escríbenos aquí.</a>
+                            <a href="#!" class="form-popup-btn"
+                                >escríbenos aquí.</a
+                            >
                         </p>
                     </div>
                     <div class="plans-link">
@@ -187,7 +189,7 @@
                                     src="./image/register-icon.png"
                                 />Regístrate</a
                             >
-                            <a href="#" class="link"
+                            <a href="#!" class="link video-popup-btn"
                                 ><img src="./image/circled-play.png" />¿Cómo
                                 registrarse?</a
                             >
@@ -266,7 +268,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="seccion-descubre">
                 <div class="container">
                     <div class="title title-center">
                         <h2>Descubre cómo ahorrarás dinero con DataMaker</h2>
@@ -399,6 +401,51 @@
                 </p>
             </div>
         </footer>
+        <div class="popup form-popup">
+            <div class="popup__wrapper">
+                <div class="popup-close">X</div>
+                <div class="popup-content">
+                    <form action="" class="form-popup">
+                        <div>
+                            <label for="nombre">Nombres y Apellidos</label>
+                            <input type="text" name="nombre" id="nombre" />
+                        </div>
+                        <div>
+                            <label for="telefono">Telefono</label>
+                            <input type="tel" name="telefono" id="telefono" />
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+                        <div>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje"></textarea>
+                        </div>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup video-popup">
+            <div class="popup__wrapper">
+                <div class="popup-close">X</div>
+                <div class="popup-content">
+                    <div class="video-iframe">
+                        <iframe
+                            src="https://www.youtube.com/embed/fSHoePrnmMw?si=iRMZ6uMTVwwumzzj"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script
             src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="

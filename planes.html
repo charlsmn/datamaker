@@ -46,7 +46,7 @@
                         <img src="./image/logo-wo.jpg" alt="World Office" />
                         <span class="hero-planes__span"
                             >Si usas otro software de contabilidad por favor
-                            <span class="escribir-aqui"
+                            <span class="escribir-aqui form-popup-btn"
                                 >escríbenos aquí.</span
                             ></span
                         >
@@ -66,7 +66,7 @@
                             <div class="plan__title">
                                 <div class="plan__title-info">
                                     <h3>Plan Gratuito</h3>
-                                    <a href="#" class="link"
+                                    <a href="#!" class="link video-popup-btn"
                                         ><img
                                             src="./image/circled-play.png"
                                         />¿Cómo funciona?</a
@@ -110,7 +110,7 @@
                                 <div class="plan__title-info">
                                     <h3>Plan Platino</h3>
                                     <p>DESCARGA XML / PDF</p>
-                                    <a href="#" class="link"
+                                    <a href="#!" class="link video-popup-btn"
                                         ><img
                                             src="./image/circled-play.png"
                                         />¿Cómo funciona?</a
@@ -267,7 +267,7 @@
                                 <div class="plan__title-info">
                                     <h3>Plan Oro</h3>
                                     <p>DESCARGA Y CONVIERTE</p>
-                                    <a href="#" class="link"
+                                    <a href="#!" class="link video-popup-btn"
                                         ><img
                                             src="./image/circled-play.png"
                                         />¿Cómo funciona?</a
@@ -466,6 +466,50 @@
                 </p>
             </div>
         </footer>
+        <div class="popup form-popup">
+            <div class="popup__wrapper">
+                <div class="popup-close">X</div>
+                <div class="popup-content">
+                    <form action="" class="form-popup">
+                        <div>
+                            <label for="nombre">Nombres y Apellidos</label>
+                            <input type="text" name="nombre" id="nombre" />
+                        </div>
+                        <div>
+                            <label for="telefono">Telefono</label>
+                            <input type="tel" name="telefono" id="telefono" />
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+                        <div>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje"></textarea>
+                        </div>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="popup video-popup">
+            <div class="popup__wrapper">
+                <div class="popup-close">X</div>
+                <div class="popup-content">
+                    <div class="video-iframe">
+                        <iframe
+                            src="https://www.youtube.com/embed/fSHoePrnmMw?si=iRMZ6uMTVwwumzzj"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script
             src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="

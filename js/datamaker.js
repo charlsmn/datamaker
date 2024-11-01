@@ -85,3 +85,23 @@ function actualizarTotalFormulario(selectorFormulario) {
 
 actualizarTotalFormulario('.plan__price-table-oro')
 actualizarTotalFormulario('.plan__price-table-platino')
+
+function abrirPopup(popupSelector, btnSelector) {
+    const popupDiv = document.querySelector(popupSelector)
+    const buttons = document.querySelectorAll(btnSelector)
+
+    const popupClose = popupDiv.querySelector('.popup-close')
+
+    popupClose.addEventListener('click', () => {
+        popupDiv.classList.remove('active')
+    })
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            popupDiv.classList.add('active')
+        })
+    })
+}
+
+abrirPopup('.form-popup', '.form-popup-btn')
+abrirPopup('.video-popup', '.video-popup-btn')

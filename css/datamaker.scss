@@ -303,6 +303,7 @@ section {
 .title {
     h2 {
         margin: 0;
+        margin-bottom: 10px;
     }
 
     p {
@@ -310,7 +311,24 @@ section {
     }
 }
 
+.seccion-descubre {
+    .title {
+        margin-bottom: 30px;
+
+        p {
+            max-width: 60%;
+            margin: 0 auto;
+
+            @include mq_down($md) {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
 .solutions-home {
+    padding-bottom: 0;
+
     .container {
         align-items: normal;
         margin-top: 45px;
@@ -420,6 +438,11 @@ section {
 
 .prueba-gratis {
     position: relative;
+    padding-top: 0;
+    background-image: url(../image/nubes.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center top;
 
     &__img {
         width: 100%;
@@ -729,6 +752,8 @@ section {
         border-radius: 16px;
         box-shadow: 4px 4px 8px rgba($color: #000000, $alpha: 0.25);
         padding: 50px 30px;
+        margin-top: 40px;
+        border: 1px solid #dfdfdf;
 
         table {
             border-spacing: 10px;
@@ -987,6 +1012,103 @@ section {
 
         > span {
             text-decoration: underline;
+        }
+    }
+}
+
+.video-iframe {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    z-index: 999;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: $transicion;
+
+    &.active {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        max-width: 600px;
+        background-color: $color-white;
+        border-radius: 16px;
+        padding: 30px;
+        box-shadow: 0 4px 10px rgba($color: #000000, $alpha: 0.25);
+    }
+
+    .popup-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        cursor: pointer;
+        background-color: $color-secondary;
+        color: $color-white;
+        border-radius: 0 0 0 16px;
+        z-index: 2;
+    }
+
+    .popup-content {
+        .form-popup {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #dfdfdf;
+                border-radius: 5px;
+            }
+
+            textarea {
+                height: 100px;
+            }
+
+            button {
+                padding: 10px 20px;
+                border: 0;
+                cursor: pointer;
+                background-color: $color-primary;
+                color: $color-white;
+                border-radius: 15px;
+                font-weight: bold;
+            }
         }
     }
 }
