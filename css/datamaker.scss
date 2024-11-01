@@ -769,6 +769,10 @@ section {
             padding: 0;
             width: 80%;
 
+            @include mq_down($md) {
+                width: 100%;
+            }
+
             li {
                 padding-left: 20px;
                 position: relative;

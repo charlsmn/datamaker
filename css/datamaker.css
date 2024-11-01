@@ -797,6 +797,11 @@ section {
   padding: 0;
   width: 80%;
 }
+@media only screen and (max-width: 768px) {
+  .ejercicio__content ul {
+    width: 100%;
+  }
+}
 .ejercicio__content ul li {
   padding-left: 20px;
   position: relative;
