@@ -1112,3 +1112,22 @@ section {
         }
     }
 }
+
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    &__big {
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    &__small {
+        font-size: 10px;
+        font-weight: normal;
+        letter-spacing: 2px;
+    }
+}
