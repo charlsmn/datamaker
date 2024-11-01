@@ -44,7 +44,7 @@
                         </h1>
                         <p>Actualmente compatible con</p>
                         <img src="./image/logo-wo.jpg" alt="World Office" />
-                        <span
+                        <span class="hero-planes__span"
                             >Si usas otro software de contabilidad por favor
                             <span class="escribir-aqui"
                                 >escríbenos aquí.</span
@@ -92,7 +92,9 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="#" class="btn btn-primary"
+                            <a
+                                href="#"
+                                class="btn btn-primary registrarse-gratuito"
                                 ><img
                                     src="./image/register-icon.png"
                                 />Regístrate</a
@@ -139,24 +141,30 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="plans-link">
+                            <div class="plans-link plans-link-oro">
                                 <a href="#!"
                                     >Ver planes
                                     <img src="./image/ver-planes.png" alt=""
                                 /></a>
                             </div>
-                            <div class="plan__price-table">
+                            <div
+                                class="plan__price-table plan__price-table-oro"
+                            >
                                 <div class="plan__price-table-title">
                                     <span>Cantidad Máxima*</span>
                                     <span>Valor</span>
                                 </div>
-                                <form action="" class="form-price">
+                                <form
+                                    action=""
+                                    class="form-price"
+                                    name="form-platino"
+                                >
                                     <label>
                                         <span
                                             ><input
                                                 type="radio"
                                                 name="cantidad"
-                                                name="$20.000"
+                                                value="$20.000"
                                             />
                                             Hasta 100</span
                                         >$20.000
@@ -166,7 +174,7 @@
                                             ><input
                                                 type="radio"
                                                 name="cantidad"
-                                                name="$20.000"
+                                                value="$57.000"
                                             />
                                             Hasta 300</span
                                         >$57.000
@@ -176,11 +184,76 @@
                                             ><input
                                                 type="radio"
                                                 name="cantidad"
-                                                name="$20.000"
+                                                value="$90.000"
                                             />
-                                            Hasta 300</span
-                                        >$57.000
+                                            Hasta 500</span
+                                        >$90.000
                                     </label>
+                                    <label>
+                                        <span
+                                            ><input
+                                                type="radio"
+                                                name="cantidad"
+                                                value="$170.000"
+                                            />
+                                            Hasta 1.000</span
+                                        >$170.000
+                                    </label>
+                                    <label>
+                                        <span
+                                            ><input
+                                                type="radio"
+                                                name="cantidad"
+                                                value="$480.000"
+                                            />
+                                            Hasta 3.000</span
+                                        >$480.000
+                                    </label>
+                                    <label>
+                                        <span
+                                            ><input
+                                                type="radio"
+                                                name="cantidad"
+                                                value="$1.500.000"
+                                            />
+                                            Hasta 10.000</span
+                                        >$1.500.000
+                                    </label>
+                                    <label>
+                                        <span
+                                            ><input
+                                                type="radio"
+                                                name="cantidad"
+                                                value="$2.400.000"
+                                            />
+                                            Hasta 20.000</span
+                                        >$2.400.000
+                                    </label>
+                                    <label>
+                                        <span
+                                            ><input
+                                                type="radio"
+                                                name="cantidad"
+                                                value="$5.000.000"
+                                            />
+                                            Hasta 50.000</span
+                                        >$5.000.000
+                                    </label>
+                                    <div class="total">
+                                        Total Compra: <span></span>
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary"
+                                    >
+                                        <img src="./image/Shopping-Cart.png" />
+                                        Pagar
+                                    </button>
+                                    <small
+                                        >*Cantidad máxima de documentos de DIAN
+                                        que podrás descargar para obtener el XML
+                                        y PDF</small
+                                    >
                                 </form>
                             </div>
                         </div>
@@ -225,11 +298,120 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="plans-link">
+                            <div class="plans-link plans-link-platino">
                                 <a href="#!"
                                     >Ver planes
                                     <img src="./image/ver-planes.png" alt=""
                                 /></a>
+                            </div>
+                            <div
+                                class="plan__price-table plan__price-table-platino"
+                            >
+                                <div class="plan__price-table-title">
+                                    <span>Cantidad Máxima*</span>
+                                    <span>Valor</span>
+                                </div>
+                                <form
+                                    action=""
+                                    class="form-price"
+                                    name="form-oro"
+                                >
+                                    <label>
+                                        <span
+                                            ><input
+                                                type="radio"
+                                                name="cantidad"
+                                                value="$40.000"
+                                            />
+                                            Hasta 100</span
+                                        >$40.000
+                                    </label>
+                                    <label>
+                                        <span
+                                            ><input
+                                                type="radio"
+                                                name="cantidad"
+                                                value="$114.000"
+                                            />
+                                            Hasta 300</span
+                                        >$114.000
+                                    </label>
+                                    <label>
+                                        <span
+                                            ><input
+                                                type="radio"
+                                                name="cantidad"
+                                                value="$180.000"
+                                            />
+                                            Hasta 500</span
+                                        >$180.000
+                                    </label>
+                                    <label>
+                                        <span
+                                            ><input
+                                                type="radio"
+                                                name="cantidad"
+                                                value="$340.000"
+                                            />
+                                            Hasta 1.000</span
+                                        >$340.000
+                                    </label>
+                                    <label>
+                                        <span
+                                            ><input
+                                                type="radio"
+                                                name="cantidad"
+                                                value="$960.000"
+                                            />
+                                            Hasta 3.000</span
+                                        >$960.000
+                                    </label>
+                                    <label>
+                                        <span
+                                            ><input
+                                                type="radio"
+                                                name="cantidad"
+                                                value="$3.000.000"
+                                            />
+                                            Hasta 10.000</span
+                                        >$3.000.000
+                                    </label>
+                                    <label>
+                                        <span
+                                            ><input
+                                                type="radio"
+                                                name="cantidad"
+                                                value="$4.800.000"
+                                            />
+                                            Hasta 20.000</span
+                                        >$4.800.000
+                                    </label>
+                                    <label>
+                                        <span
+                                            ><input
+                                                type="radio"
+                                                name="cantidad"
+                                                value="$10.000.000"
+                                            />
+                                            Hasta 50.000</span
+                                        >$10.000.000
+                                    </label>
+                                    <div class="total">
+                                        Total Compra: <span></span>
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary"
+                                    >
+                                        <img src="./image/Shopping-Cart.png" />
+                                        Pagar
+                                    </button>
+                                    <small
+                                        >*Cantidad máxima de documentos de DIAN
+                                        que podrás descargar para obtener el XML
+                                        y PDF y convertir</small
+                                    >
+                                </form>
                             </div>
                         </div>
                     </div>
