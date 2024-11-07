@@ -118,6 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     salario: '73.043',
                     plan: '40.000',
                     ahorro: '33.043',
+                    ahorroMinutos: '375',
                 },
                 300: {
                     minutos: 1200,
@@ -125,6 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     salario: '219.130',
                     plan: '114.000',
                     ahorro: '105.130',
+                    ahorroMinutos: '1.125',
                 },
                 500: {
                     minutos: 2000,
@@ -132,6 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     salario: '365.217',
                     plan: '180.000',
                     ahorro: '185.217',
+                    ahorroMinutos: '1.875',
                 },
                 1000: {
                     minutos: 4000,
@@ -139,6 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     salario: '730.435',
                     plan: '340.000',
                     ahorro: '390.435',
+                    ahorroMinutos: '3.750',
                 },
                 3000: {
                     minutos: 12000,
@@ -146,6 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     salario: '2.191.304',
                     plan: '960.000',
                     ahorro: '1.231.304',
+                    ahorroMinutos: '11.250',
                 },
                 10000: {
                     minutos: 40000,
@@ -153,6 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     salario: '7.304.348',
                     plan: '3.000.000',
                     ahorro: '4.304.348',
+                    ahorroMinutos: '37.500',
                 },
                 20000: {
                     minutos: 80000,
@@ -160,6 +166,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     salario: '14.608.696',
                     plan: '4.800.000',
                     ahorro: '9.808.696',
+                    ahorroMinutos: '75.000',
                 },
                 50000: {
                     minutos: 200000,
@@ -167,6 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     salario: '36.521.739',
                     plan: '10.000.000',
                     ahorro: '26.521.739',
+                    ahorroMinutos: '187.500',
                 },
             }
 
@@ -180,6 +188,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 selectedData.plan
             document.querySelector('.ahorro-tabla').textContent =
                 selectedData.ahorro
+            document.querySelector('.ahorro-minutos').textContent =
+                selectedData.ahorroMinutos
         }
 
         updateValues('100')
